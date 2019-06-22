@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'foods.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'database-1',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres|Spark1234',
+        'HOST': 'database-1.cfynhvq3mjlq.us-west-2.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
